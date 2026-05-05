@@ -7,6 +7,7 @@ Please check out all the comments inside the file for fixes
 Todo list for the wiki:
 - Playfield related stuff
 - Fix the wording
+
 Todo list for the guide:
 - Basic mapping steps
 - Advance mapping (dealing with some sen specific features): lane snap, grid snap, some of the verify tab issue(?)
