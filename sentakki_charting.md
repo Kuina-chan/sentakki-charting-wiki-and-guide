@@ -1,12 +1,13 @@
 # Charting/Mapping with sentakki
 So now you installed the ruleset, with the aim of mapping something that represent **you**, but the lazer editor is too confusing. This wiki article aim to help you navigate the editor and start to create your own maps.
-> Note: Simai is not supported in the release channel of sentakki, and so is saving.
+> [!NOTE]
+> Simai is not supported in the release channel of sentakki, and so is saving.
 
 ## 1, The Interface
-The interface is just a standard osu!lazer interface, but with some small modification. On the left panel, we have the toolbox, and the toggles. These will be our main focus.
+The interface is just a standard osu!lazer interface, but with some modification, all of them are on the composer tab. On the left panel, we have the toolbox, and the toggles.
 <!--insert picture of left panel-->
 
-And on the right side, we have the inspector. The inspector will show various data about an object, which we will go deep into it later.
+And on the right side, we have the inspector. The inspector will show various data about an object
 
 <!--insert picture of right panel-->
 
@@ -21,17 +22,18 @@ The "Toolbox" house all the objects there are in sentakki:
 - [Touchhold](https://github.com/LumpBloom7/sentakki/wiki/Hit-Objects#touchholds) (keybind: <kbd>6</kbd>)
 
 <!--Toolbox picture goes here-->
-Some of them even have tooltips, try to hover above the button to see what those are.
-
+Some of them even have tooltips, mostly to provide shortcuts guidance that are applied to the current release.
 ### 1.2: The Toggles
-All the toggles work as the same as the base osu! editor, but there are four new toggles in sentakki. Two of the most important will be mentioned here, the other two will be in the [Advance Mapping]:
+All the toggles work as the same as the base osu! editor, but there are four new toggles in sentakki:
 
 - [Break](https://github.com/LumpBloom7/sentakki/wiki/Hit-Objects#break-modifier) (keybind: <kbd>R</kbd>): Apply the break modifier to the selected object(s) or make all the notes placed after activate to have break modifier.
 - [Ex](https://github.com/LumpBloom7/sentakki/wiki/Hit-Objects#ex-modifier) (keybind: <kbd>T</kbd>): Apply the ex modifier to the selected object(s) or make all the notes placed after activate to have ex modifier.
-
+- Lane note snap grid (keybind: <kbd>Y</kbd>): This feature enable the timing snap grid visible after picking the type of object from the toolbox. Similar to the osu!mania timing grid
+<!--only if this support gif, or I guess a simple picture can work-->
+- Touch snap grid (keybind: <kbd>U</kbd>): Touch note will be snapped to the points which are visible after picking either touch or touchhold object from the toolbox. The position of the dots correspond to the centre of the sensor in the official maimai cabinet. See: [maimai sensor map](https://static.wikitide.net/argwwiki/6/61/Maimai_New_Sensor_Map.png)
 > Note: All of the objects can have both `Break` and `Ex` modifier applied to them, except for `Touchholds` only can have `Break` modifier.
 
-> For the slides, only the slide tap will be affected by this toggle.
+> For the slides, only the slide tap will be affected by the toggle.
 ### 1.3: The Inspector
 The inspector located on the right, where it will show you the various attribute of an object. All of them, however, will display the same a few key attributes:
 
@@ -41,12 +43,15 @@ The inspector located on the right, where it will show you the various attribute
 <!-- Try to show all of them in one picture?-->
 
 All the attribute below will only appear when select the corresponding object:
-- Duration (only on Hold, Slide and Touchhold): show how long the object last in both milisecond and beat counts.
-- Position`[x, y]` (only on touch and touchhold): show where the touch/touchhold on the screen, with the centre of the playfield equivalent to `x = 0` and `y = 0`.
+- Duration (only on `Hold`, `Slide` and `Touchhold`): show how long the object last in both milisecond and beat counts.
+- Position`[x, y]` (only on `Touch` and `Touchhold`): show where the touch/touchhold on the screen, with the centre of the playfield equivalent to `x = 0` and `y = 0`.
 - Position`[lane]`: show which [lane]() <!--need the link about lane, which is later in the playfield section. Remove this comment once the link is added--> is the object is located or started on.
-- Wait duration (only on Slide): show how long the star will wait before shoot off.
-- Movement duration (only on Slide): show how long the star will travel on the slide after shoot off.
-- Segments (only on Slide): show how many segment of slides is on that slide. The syntax used there is `shape of slide(A number to show position relative to the last segment end)`
-    > Note: The number shown is positive if the segment ended closest is in the clockwise position and negative  if the segment ended closest is in the counter-clockwise position
+- Wait duration (only on `Slide`): show how long the star will wait before shoot off, measure in both milisecond and beat counts.
+- Movement duration (only on `Slide`): show how long the star will travel on the slide after shoot off, measure in both milisecond and beat counts.
+- Segments (only on `Slide`): show how many segment of slides is on that slide. The syntax used is `shape of slide(A number to show position relative to the last segment end)`
+    > [!NOTE]
+    > The number shown is positive if the segment ended closest is in the clockwise position and negative  if the segment ended closest is in the counter-clockwise position
     <!-- The note need repharse -->
 - Slide modifier: The slide body contain its own modifier, separate from the modifier of the slide tap. Slide body modifier will be shown here.
+
+Several attributes in the `Inspector` can be directly altered by left clicking on the text. It will highlight with yellow on hover if the attribute is modifiable.
