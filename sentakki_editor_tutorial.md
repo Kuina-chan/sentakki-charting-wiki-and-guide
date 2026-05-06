@@ -2,7 +2,7 @@
 The sentakki Editor is an UI-based maimai chart creation tool designed for use in sentakki. 
 > [!WARNING]  
 > Sentakki cannot save your content. Everything you design will be deleted as soon as you close the editor. Related: https://github.com/ppy/osu/issues/11736, https://github.com/LumpBloom7/sentakki/issues/791
-
+<img width="1920" height="1080" alt="osu_2026-05-06_11-55-33" src="https://github.com/user-attachments/assets/7d8be3d1-ec96-461a-a80b-8b0c78ca69ed" />
 
 ## Interface
 The interface of the editor follows the standard osu!lazer interface. 
