@@ -1,5 +1,5 @@
 # Charting/Mapping with sentakki
-So now you installed the ruleset, with the aim of mapping something that represent **you**, but the lazer editor is too confusing. This wiki article aim to help you navigate the editor and start to create your own maps.
+**So now you installed the ruleset**, with the aim of mapping something that represent you, **but the lazer editor is too confusing**. This wiki article aim to help you navigate the editor and start to create your own maps.
 > [!NOTE]
 > Simai is not supported in the release channel of sentakki, and so is saving.
 
@@ -55,3 +55,18 @@ All the attribute below will only appear when select the corresponding object:
 - Slide modifier: The slide body contain its own modifier, separate from the modifier of the slide tap. Slide body modifier will be shown here.
 
 Several attributes in the `Inspector` can be directly altered by left clicking on the text. It will highlight with yellow on hover if the attribute is modifiable.
+
+
+> [!NOTE]
+> All other element stays the same. You can find a guide/wiki [here]()<!--link of the original wiki on osu-->
+## 2, The Playfield
+In the middle of the main composer tab is the playfield. This playfield adhere to the [maimai interface](https://static.wikitide.net/argwwiki/6/61/Maimai_New_Sensor_Map.png)
+
+### 2.1: The ring
+The ring is the boundary of the playfield, and also the judgement lines for all the laned notes.
+
+
+### 2.2: Lane and touch sensors:
+These are the 8 fixed position on the ring for "lane" (sometime they also called sensors), separate by <!-- angel -->. Lanes note can accomodate non-touch objects (tap, hold and the slide tap).
+
+The touches are distributed on the screen, with their centre formed a 3 circles formation and an extra touch sensor in the middle
