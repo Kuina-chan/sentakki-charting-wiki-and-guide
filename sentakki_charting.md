@@ -67,6 +67,19 @@ The ring is the boundary of the playfield, and also the judgement lines for all 
 
 
 ### 2.2: Lane and touch sensors:
-These are the 8 fixed position on the ring for "lane" (sometime they also called sensors), separate by <!-- angel -->. Lanes note can accomodate non-touch objects (tap, hold and the slide tap).
+These are the 8 fixed position on the ring for "lane" (sometime they also called sensors), separate by 45°. Lanes note can accomodate non-touch objects (tap, hold and the slide tap).
 
-The touches are distributed on the screen, with their centre formed a 3 circles formation and an extra touch sensor in the middle
+The touches are distributed on the screen, with their centre formed a 3 circles formation and an extra touch sensor in the middle.
+
+Sentakki will show the center of these touches when the option "Touch Snap Grid" is enable. The main goal of sentakki is allow for those touches to be freely place inside the area of the ring, but the dots are for the "best practice" when mapping.
+
+## 3, The Verify Tab:
+The verify tab meant to help you avoid some of the pitfall that might happen during the charting. Some of the problems are listed here:
+
+- Problems:
+    - `osu.Game.Rulesets.Sentakki.Objects.Hold has a duration of 0.`:
+        This check is meant to be more of a warning. Normally Holds shouldn't have their duration to be 0, but the ruleset enable this to match the original maimai.
+
+- Warning:
+    - `Slide omits intial tap. This will slightly alter SlideBody input behavior.`:
+    <!--I need check on what exactly alter>
